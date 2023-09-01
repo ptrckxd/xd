@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating GIF</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #floatingGif {
+            position: absolute;
+            animation: float 10s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(50%, 50%);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img id="floatingGif" src="https://media0.giphy.com/media/U1rlk8zdcAwbm/giphy.gif?cid=ecf05e47vmgeatmlr5nj340g3w45nggj1ogeyt3iwpzr9lar&ep=v1_gifs_search&rid=giphy.gif" alt="Floating GIF">
+</body>
+</html>
+
